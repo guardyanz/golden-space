@@ -7,15 +7,31 @@ and clean SVG source you can keep editing.**
 
 ![Golden Space: proportion with purpose](skills/golden-space/assets/starter.svg)
 
-Golden Space turns design principles into decisions an agent can use while making
-posters, diagrams, illustrations, icons, and layout studies. It covers golden ratio,
-spacing, hierarchy, typography, color, alignment, rhythm, and optical balance.
+Golden Space applies design constraints while an agent creates a poster or image,
+then asks it to inspect and refine the result. It covers golden ratio, whitespace,
+hierarchy, typography, color, alignment, rhythm, and optical balance. A creation
+request should produce the visual artifact, rather than only advice or a prompt.
+
+**The final output can be SVG or raster.** Request editable SVG, PNG, JPEG, or WebP
+as needed; the skill follows that choice. Both formats are not required. A raster
+poster can be composed in SVG internally and exported to the requested image format.
+
+For vector-suitable posters, social graphics, illustrations, diagrams, and icons,
+the agent creates a complete editable `.svg` file by default, even if the brief
+does not mention SVG. It writes the file when file tools are available and can
+also render a PNG preview. Your explicitly requested format takes priority.
 
 Golden ratio is an optional compositional relationship. The skill asks the agent
 to compare it with other layouts and keep it when it serves the content. There is
 no required spiral, universal whitespace percentage, or prescribed visual style.
 
-For SVG work, the default deliverable is a self-contained vector master with live
+For photography and painterly imagery, the skill guides the available image tool
+with concrete focal placement, safe margins, negative space, palette, and copy zones.
+The agent then reviews the actual image. A photographic layer remains raster:
+placing it in an SVG does not make it fully editable vector artwork. A separate
+vector interpretation or clearly labeled hybrid layout is possible when requested.
+
+For vector artwork, the default deliverable is a self-contained master with live
 text, separate objects, descriptive IDs, and simple semantic groups. Raster wrappers,
 flattened text, external assets, scripts, and filter effects are excluded from the
 portable master. Exact rendering still depends on fonts and editor support.
@@ -44,6 +60,20 @@ In Codex, invoke `$golden-space` with a brief. In another agent, select the inst
 skill through its supported invocation mechanism, or explicitly reference `SKILL.md`.
 
 ```text
+Use $golden-space to make a poster for a ceramics exhibition, 1200 x 742.
+Copy: "Clay / Form / Space", "12-14 June", "Studio 04". Use a warm palette.
+```
+
+For this vector-suitable brief, the expected deliverable includes an editable SVG
+file without a separate export request. A more specific brief can set the format:
+
+```text
+Use $golden-space to make a 1080 x 1350 plant-swap poster. Deliver PNG only.
+Copy: "Plant Swap", "Saturday 09:00", "Community Garden". Use two greens
+and a warm background. Keep the title prominent and the illustration simple.
+```
+
+```text
 Use $golden-space to create a 1200 x 742 editorial SVG poster for a ceramics
 exhibition. Compare a 61.8/38.2 split with thirds, choose what suits the copy,
 keep the text editable, and deliver the complete SVG. Use a warm neutral palette.
@@ -68,16 +98,22 @@ The skill does not publish files, install fonts, or authorize unrelated actions.
 | --- | --- |
 | [SKILL.md](skills/golden-space/SKILL.md) | Main instructions and workflow |
 | [Composition reference](skills/golden-space/references/composition.md) | Ratios, spacing, hierarchy, optical balance, color |
+| [Image direction](skills/golden-space/references/image-direction.md) | Apply composition constraints through image tools |
 | [SVG contract](skills/golden-space/references/svg-contract.md) | Editable structure and portable master conventions |
 | [Starter SVG](skills/golden-space/assets/starter.svg) | Live text and grouped arch illustration |
 | [Whitespace study](examples/whitespace-study.svg) | Equal columns and proximity-based grouping |
 | [Balanced mark](examples/balanced-mark.svg) | Transparent, separate vector components |
+| [Plant-swap SVG](examples/plant-swap.svg) / [PNG](examples/plant-swap.png) | A complete poster delivered in either format |
+| [Transparent PNG mark](examples/balanced-mark.png) | Raster export with real alpha transparency |
 | [SVG checker](skills/golden-space/scripts/check_svg.py) | Read-only structural lint, with text and JSON reports |
 | [Evaluation scenarios](evals/scenarios.md) | Briefs and observable criteria for testing agent behavior |
 
-All three SVGs are original examples licensed under MIT. Their typography uses font
+The SVG examples are original artwork licensed under MIT. Their typography uses font
 stacks, not bundled fonts. Substitute fonts may change line lengths and appearance.
 The examples demonstrate structure and composition; they are not mandatory templates.
+
+See the [verification record](evals/results.md) for the checks actually performed
+and the limits of that evidence.
 
 ## Check an SVG
 

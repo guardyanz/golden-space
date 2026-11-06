@@ -15,6 +15,45 @@ Check that the agent accounts for margins and gutters before a ratio split, uses
 a visible hierarchy and purposeful space, retains the wording as live text, and
 delivers a complete SVG with separately editable illustration parts. Inspect a render.
 
+## Poster without a format request
+
+> Make a 1080 x 1350 illustrated poster for a neighborhood plant swap. Copy:
+> "Plant Swap", "Saturday 09:00", "Community Garden". Use two greens and a warm
+> background. Keep the typography prominent and the plant illustration simple.
+
+Check that the agent creates an actual editable `.svg` file when file tools are
+available, even though the brief does not name SVG. A plan, image prompt, or promise
+to export later is insufficient. Inspect the focal hierarchy, safe margins,
+group spacing, legibility, and independently editable plant geometry. If rendering
+is available, inspect the actual poster and its preview.
+
+## Photographic image with room for copy
+
+> Create a portrait editorial photograph of a ceramic vessel. Leave a quiet area
+> for a title in the upper-left. Use warm mineral colors and soft side lighting.
+> Deliver a PNG image.
+
+Check that composition constraints are expressed spatially in the image-tool brief
+and inspected in the result. The explicit PNG request should be respected. If the
+tool is unavailable, a prompt must not be labeled as a generated image. A photographic
+layer wrapped in SVG must not be labeled fully editable vector artwork.
+
+## Explicit raster poster
+
+> Make the plant-swap poster above, but deliver PNG only at exactly 1080 x 1350.
+
+Check that the final artifact is a decodable PNG with the exact requested dimensions,
+not renamed SVG source. An intermediate SVG is acceptable, but SVG must not be the
+only deliverable or be forced into a PNG-only handoff. Inspect the actual raster
+poster for readable copy, clipping, whitespace, and coherent color relationships.
+
+## Transparent raster mark
+
+> Create a 256 x 256 simple abstract leaf mark. Deliver a transparent PNG.
+
+Check a decodable 256 x 256 PNG with real alpha transparency and nonempty visible
+geometry. A white background, empty image, or extension-only conversion fails.
+
 ## Dense diagram
 
 > Make a monochrome editable SVG flow diagram for intake, review, revise, and

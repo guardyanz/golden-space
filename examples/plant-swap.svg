@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="art-title art-desc">
+  <title id="art-title">Plant Swap</title>
+  <desc id="art-desc">A plant-swap event poster with a bold two-line title, separated event details, and a simple two-green potted plant on a warm background.</desc>
+  <g id="background">
+    <rect id="paper" width="1080" height="1350" fill="#f6f1e5"/>
+  </g>
+  <g id="event-copy" fill="#183f32" font-family="Arial, Helvetica, sans-serif">
+    <text id="headline" x="68" y="230" font-size="176" font-weight="700" letter-spacing="-7">
+      <tspan x="68" y="230">Plant</tspan>
+      <tspan x="68" y="401">Swap</tspan>
+    </text>
+    <text id="event-time" x="76" y="608" font-size="34">Saturday 09:00</text>
+    <line id="time-rule" x1="76" y1="650" x2="360" y2="650" stroke="#527346" stroke-width="3"/>
+    <line id="location-rule" x1="76" y1="1154" x2="1004" y2="1154" stroke="#183f32" stroke-width="2"/>
+    <text id="event-location" x="76" y="1228" font-size="40">Community Garden</text>
+  </g>
+  <g id="plant-illustration">
+    <path id="stem" d="M 805 978 V 594" fill="none" stroke="#183f32" stroke-width="16" stroke-linecap="round"/>
+    <path id="top-leaf" d="M 805 620 C 780 555 816 488 902 478 C 914 561 882 614 805 620 Z" fill="#527346"/>
+    <path id="left-leaf" d="M 805 734 C 682 748 620 690 610 602 C 720 590 798 647 805 734 Z" fill="#183f32"/>
+    <path id="right-leaf" d="M 805 832 C 832 721 920 692 1000 679 C 1003 792 921 858 805 832 Z" fill="#527346"/>
+    <path id="lower-leaf" d="M 805 925 C 680 961 583 911 564 832 C 697 796 778 833 805 925 Z" fill="#183f32"/>
+    <path id="pot-body" d="M 678 978 H 938 L 912 1110 H 704 Z" fill="#183f32"/>
+    <rect id="pot-rim" x="670" y="954" width="276" height="32" rx="4" fill="#527346"/>
+  </g>
+</svg>

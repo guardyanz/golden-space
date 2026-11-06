@@ -7,9 +7,28 @@ dan pembuatan SVG yang rapi serta tetap mudah diedit.**
 
 ![Contoh komposisi Golden Space](skills/golden-space/assets/starter.svg)
 
-Skill ini membantu agent mengambil keputusan desain untuk poster, diagram,
-ilustrasi, ikon, dan studi layout. Cakupannya meliputi golden ratio, jarak,
-tipografi, warna, alignment, ritme, dan keseimbangan optis.
+Skill ini menerapkan batasan desain saat agent membuat poster atau gambar, lalu
+meminta agent meninjau dan memperbaiki hasilnya. Cakupannya meliputi golden ratio,
+whitespace, hierarki, tipografi, warna, alignment, ritme, dan keseimbangan optis.
+Permintaan membuat desain harus menghasilkan artefak visual, bukan berhenti pada
+saran atau prompt.
+
+**Hasil akhir bisa SVG atau raster.** Pengguna dapat meminta SVG editable, PNG,
+JPEG, atau WebP; skill mengikuti pilihan itu. Tidak wajib memberikan kedua format.
+Poster raster juga dapat disusun dalam SVG terlebih dahulu lalu diekspor ke format
+gambar yang diminta.
+
+Untuk poster, social graphic, ilustrasi, diagram, dan ikon yang cocok dibuat dalam
+bentuk vektor, hasil default langsung berupa **file `.svg` editable**, meskipun
+pengguna tidak menyebut SVG. Agent menyimpan file jika alat penulisan file tersedia,
+dan dapat menyertakan preview PNG jika bisa merender. Format yang secara eksplisit
+diminta pengguna tetap diutamakan.
+
+Untuk fotografi atau gambar dengan tekstur lukisan, aturan komposisi diterjemahkan
+ke arahan image generator: posisi fokus, margin aman, ruang kosong, palet, dan area
+teks. Hasilnya tetap diperiksa secara visual. Foto yang dimasukkan ke dalam SVG
+tetap berupa raster; versi vektor tersendiri atau layout hybrid dapat dibuat sesuai
+kebutuhan dan harus dijelaskan sifatnya.
 
 Golden ratio dipakai sebagai pilihan proporsi sesuai kebutuhan konten. Agent
 diminta membandingkannya dengan komposisi lain. Tidak ada persentase whitespace
@@ -36,6 +55,20 @@ tanpa Python.
 ## Contoh pemakaian
 
 Di Codex:
+
+```text
+Gunakan $golden-space untuk membuat poster pameran keramik ukuran 1200 x 742.
+Teks: "Clay / Form / Space", "12-14 June", "Studio 04". Pakai palet hangat.
+```
+
+Brief yang cocok untuk vektor seperti ini langsung menghasilkan file SVG editable
+tanpa perlu permintaan ekspor terpisah. Untuk arahan yang lebih spesifik:
+
+```text
+Gunakan $golden-space untuk membuat poster Plant Swap ukuran 1080 x 1350.
+Hasil akhir PNG saja. Teks: "Plant Swap", "Saturday 09:00", "Community Garden".
+Gunakan dua warna hijau dan latar hangat, dengan judul yang menonjol.
+```
 
 ```text
 Gunakan $golden-space untuk membuat poster pameran keramik berukuran 1200 x 742.
@@ -69,7 +102,8 @@ dan bukan sanitizer keamanan.
 ## Isi repo dan pemeriksaan
 
 Tersedia [aturan komposisi](skills/golden-space/references/composition.md),
-[kontrak SVG](skills/golden-space/references/svg-contract.md), tiga contoh SVG
+[arahan image generator](skills/golden-space/references/image-direction.md),
+[kontrak SVG](skills/golden-space/references/svg-contract.md), contoh SVG
 original, [skenario evaluasi](evals/scenarios.md), serta pemeriksa struktur:
 
 ```sh
@@ -81,3 +115,7 @@ python -m unittest discover -s tests -v
 Mode biasa gagal jika ada error. `--strict` juga gagal pada warning yang perlu
 ditinjau. Dokumentasi teknis dan batasan lengkap tersedia pada [README Inggris](README.md).
 Seluruh instruksi, skrip, dan contoh SVG dalam repo ini menggunakan lisensi MIT.
+
+Lihat contoh poster dalam [SVG](examples/plant-swap.svg) atau [PNG](examples/plant-swap.png),
+[mark PNG transparan](examples/balanced-mark.png), dan
+[catatan verifikasi](evals/results.md) untuk pengujian yang benar-benar dilakukan.
