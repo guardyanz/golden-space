@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="art-title art-desc">
+  <title id="art-title">Arch and disc identity study</title>
+  <desc id="art-desc">A green arch with an open center balanced by a small terracotta circle on a transparent canvas. Each component is a separate vector object.</desc>
+  <g id="mark">
+    <path id="arch" d="M 40 216 V 112 A 72 72 0 0 1 184 112 V 216 H 144 V 120 A 32 32 0 0 0 80 120 V 216 Z" fill="#17372e"/>
+    <circle id="disc" cx="206" cy="54" r="18" fill="#b54b35"/>
+  </g>
+</svg>

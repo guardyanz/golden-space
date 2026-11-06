@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="742" viewBox="0 0 1200 742" role="img" aria-labelledby="art-title art-desc">
+  <title id="art-title">Golden Space</title>
+  <desc id="art-desc">An editorial composition with a large live-text title on the left and an editable arch illustration on the right.</desc>
+  <g id="background">
+    <rect id="paper" width="1200" height="742" fill="#f5f1e8"/>
+  </g>
+  <g id="copy" fill="#17372e">
+    <text id="eyebrow" x="64" y="94" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="3">A DESIGN SKILL FOR AI AGENTS</text>
+    <text id="headline" x="58" y="274" font-family="Georgia, 'Times New Roman', serif" font-size="112" letter-spacing="-4">
+      <tspan x="58" y="274">Golden</tspan>
+      <tspan x="58" y="386">Space.</tspan>
+    </text>
+    <text id="subheading" x="64" y="458" font-family="Arial, Helvetica, sans-serif" font-size="25">Proportion with purpose.</text>
+    <text id="body-copy" x="64" y="503" font-family="Arial, Helvetica, sans-serif" font-size="18">
+      <tspan x="64" y="503">Thoughtful whitespace. Clear hierarchy.</tspan>
+      <tspan x="64" y="532">Clean vectors you can keep editing.</tspan>
+    </text>
+  </g>
+  <g id="arch-illustration">
+    <path id="outer-arch" d="M 777 536 V 296 A 160 160 0 0 1 1097 296 V 536 Z" fill="#17372e"/>
+    <path id="arch-opening" d="M 865 536 V 326 A 72 72 0 0 1 1009 326 V 536 Z" fill="#f5f1e8"/>
+    <circle id="accent-disc" cx="1094" cy="112" r="32" fill="#b54b35"/>
+    <line id="ground-line" x1="749" y1="560" x2="1125" y2="560" stroke="#17372e" stroke-width="2"/>
+  </g>
+  <g id="footer" fill="#17372e" font-family="Arial, Helvetica, sans-serif" font-size="13">
+    <line id="footer-rule" x1="64" y1="637" x2="1136" y2="637" stroke="#17372e" stroke-width="1"/>
+    <text id="footer-left" x="64" y="674" letter-spacing="1">COMPOSE / REFINE / EDIT</text>
+    <text id="footer-right" x="1136" y="674" text-anchor="end">OPEN SOURCE · MIT</text>
+  </g>
+</svg>

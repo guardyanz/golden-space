@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="art-title art-desc">
+  <title id="art-title">Space makes relationships visible</title>
+  <desc id="art-desc">Three steps of a design process. Each number, heading, and description forms a close group, with larger gaps separating the steps.</desc>
+  <rect id="background" width="1200" height="720" fill="#182b46"/>
+  <g id="introduction" fill="#f7f5ef">
+    <text id="eyebrow" x="64" y="80" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="2">WHITESPACE / GROUPING / RHYTHM</text>
+    <text id="headline" x="60" y="178" font-family="Georgia, 'Times New Roman', serif" font-size="58">Let the space do some work.</text>
+    <text id="intro-copy" x="64" y="226" font-family="Arial, Helvetica, sans-serif" font-size="21">Close within a thought. Generous between thoughts.</text>
+  </g>
+  <g id="process" font-family="Arial, Helvetica, sans-serif">
+    <g id="step-define">
+      <line id="define-rule" x1="64" y1="334" x2="368" y2="334" stroke="#a6c8e7" stroke-width="2"/>
+      <text id="define-number" x="64" y="382" font-size="16" fill="#a6c8e7">01</text>
+      <text id="define-title" x="64" y="437" font-size="32" fill="#f7f5ef">Define.</text>
+      <text id="define-copy" x="64" y="478" font-size="18" fill="#d4dfec">
+        <tspan x="64" y="478">One message.</tspan>
+        <tspan x="64" y="506">One clear place to start.</tspan>
+      </text>
+    </g>
+    <g id="step-compose">
+      <line id="compose-rule" x1="448" y1="334" x2="752" y2="334" stroke="#a6c8e7" stroke-width="2"/>
+      <text id="compose-number" x="448" y="382" font-size="16" fill="#a6c8e7">02</text>
+      <text id="compose-title" x="448" y="437" font-size="32" fill="#f7f5ef">Compose.</text>
+      <text id="compose-copy" x="448" y="478" font-size="18" fill="#d4dfec">
+        <tspan x="448" y="478">Set the relationships.</tspan>
+        <tspan x="448" y="506">Give each group room.</tspan>
+      </text>
+    </g>
+    <g id="step-refine">
+      <line id="refine-rule" x1="832" y1="334" x2="1136" y2="334" stroke="#a6c8e7" stroke-width="2"/>
+      <text id="refine-number" x="832" y="382" font-size="16" fill="#a6c8e7">03</text>
+      <text id="refine-title" x="832" y="437" font-size="32" fill="#f7f5ef">Refine.</text>
+      <text id="refine-copy" x="832" y="478" font-size="18" fill="#d4dfec">
+        <tspan x="832" y="478">Check at actual size.</tspan>
+        <tspan x="832" y="506">Adjust what feels crowded.</tspan>
+      </text>
+    </g>
+  </g>
+  <g id="footer" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#a6c8e7">
+    <text id="footer-label" x="64" y="650">GOLDEN SPACE</text>
+    <text id="footer-note" x="1136" y="650" text-anchor="end">Equal columns suit equally important steps.</text>
+  </g>
+</svg>
