@@ -1,0 +1,11 @@
+Use case: ads-marketing
+Asset type: artwork layer for a portrait 4:5 social-media promotional post, ideally 1024 x 1280 pixels.
+Primary request: Create a polished promotional artwork for Golden Space, an open-source design skill for AI agents, for an audience of developers and designers.
+Subject: a sculptural arch and a sphere, with matte tactile surfaces and an editorial graphic-art feel.
+Color palette: warm ivory background, deep forest green, and a restrained terracotta accent.
+The final post will have the title Golden Space, the line Better space. Clearer design., a feature list, and a GitHub link, added separately. Leave room for that copy. Make a professional, attractive promotional composition.
+Constraints: artwork only; no letters, numbers, words, logos, watermarks, or comparison labels in the generated artwork. Do not render the promotional copy into the image.
+
+Additional art direction from Golden Space:
+Build a quiet, intentional editorial composition. Reserve the upper-left and middle-left as a clean warm-ivory copy region; it must stay genuinely quiet rather than textured or filled with decoration. Keep a safe perimeter of roughly seven percent. Place the single forest-green arch in the lower-right, within approximately x=59-91% and y=40-79% of the canvas. Make its surface matte and subtly tactile, with crisp boundaries and a restrained soft contact shadow. Place the small terracotta sphere as a subordinate accent near the arch, with a visible breathing gap rather than an accidental tangent. Do not add extra objects.
+Use an approximate golden relationship between the larger quiet primary region and the smaller dense artwork region, accounting for the safe perimeter and the gap; no visible grid or spiral. The actual composition should serve the copy, not a formula. Keep the top roughly 30% and bottom roughly 13% especially calm for a title and repository address. Balance the dark visual weight lower-right with the future large title upper-left. Preserve generous negative space between the copy zone and artwork, and a clear focal hierarchy. Avoid cropping the arch, competing focal points, busy textures behind copy, and tangencies at the canvas edges.

@@ -119,3 +119,17 @@ Seluruh instruksi, skrip, dan contoh SVG dalam repo ini menggunakan lisensi MIT.
 Lihat contoh poster dalam [SVG](examples/plant-swap.svg) atau [PNG](examples/plant-swap.png),
 [mark PNG transparan](examples/balanced-mark.png), dan
 [catatan verifikasi](evals/results.md) untuk pengujian yang benar-benar dilakukan.
+
+## Perbandingan memakai imagegen
+
+[Lihat promo tanpa dan dengan Golden Space](examples/promo-comparison/README.md).
+Keduanya memakai imagegen, brief, palet, teks, dan layout teks yang sama. Versi
+Golden Space menambahkan arahan ruang kosong, margin aman, proporsi, dan posisi
+subjek. Versi tanpa skill tetap dibuat dengan baik.
+
+![Perbandingan tanpa dan dengan Golden Space](examples/promo-comparison/comparison.png)
+
+Tersedia PNG dan SVG hybrid untuk masing-masing versi, berikut gambar asli dan
+prompt lengkap. Teks SVG tetap editable; artwork hasil imagegen tetap raster.
+Ada pula versi SVG murni beserta PNG-nya, dengan tekstur yang disederhanakan.
+Ini contoh satu sampel per versi, bukan benchmark atau jaminan peningkatan kualitas.

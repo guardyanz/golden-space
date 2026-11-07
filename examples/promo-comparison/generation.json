@@ -1,0 +1,37 @@
+{
+  "created": "2026-11-07",
+  "generation_mode": "built-in image_gen",
+  "tool_calls": 2,
+  "samples_per_variant": 1,
+  "reference_images": [],
+  "seed_control": "not exposed",
+  "model_version": "not exposed",
+  "final_canvas": [
+    1080,
+    1350
+  ],
+  "layout": "Identical live-text and vector overlay in both variants.",
+  "svg_type": "Hybrid: embedded generated raster artwork with editable text and vector overlays.",
+  "artwork_files": {
+    "without-golden-space": {
+      "path": "assets/without-golden-space-artwork.png",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "sha256": "c86aefb117dd837be31c14d18a4eb44856fc841b9340015bd1ea9048fdff4398",
+      "prompt": "prompts/without-golden-space.txt",
+      "prompt_sha256": "0d4e6330ec6c5ce736260c28e2cf6a66b87857798f26562fc2d1b925e3f05430"
+    },
+    "with-golden-space": {
+      "path": "assets/with-golden-space-artwork.png",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "sha256": "3b6d1b781cba12d184450b722107c59cc7b17e2838d092d56c009763dc2b11ea",
+      "prompt": "prompts/with-golden-space.txt",
+      "prompt_sha256": "e9b55a2604c51e24a79327da86de62a20d24222c6a5e38e2f0df3dec16d38c1e"
+    }
+  }
+}

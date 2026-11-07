@@ -115,6 +115,19 @@ The examples demonstrate structure and composition; they are not mandatory templ
 See the [verification record](evals/results.md) for the checks actually performed
 and the limits of that evidence.
 
+## Imagegen comparison
+
+The [promo comparison](examples/promo-comparison/README.md) combines imagegen with
+Golden Space and compares it with a baseline imagegen brief. The subject, palette,
+copy, and text layout stay the same; the extra art direction changes.
+
+![Imagegen with and without Golden Space](examples/promo-comparison/comparison.png)
+
+Both versions include matching PNG exports and hybrid SVG layouts with live text.
+The generated artwork remains raster; separate fully vector interpretations and
+their PNG exports are included as well. Original artwork, exact prompts, rebuilding
+instructions, and the limits of this one-sample demonstration are included.
+
 ## Check an SVG
 
 From the repository root:

@@ -1,0 +1,70 @@
+{
+  "text": [
+    {
+      "id": "eyebrow",
+      "inside": true
+    },
+    {
+      "id": "headline",
+      "inside": true
+    },
+    {
+      "id": "tagline",
+      "inside": true
+    },
+    {
+      "id": "feature-whitespace",
+      "inside": true
+    },
+    {
+      "id": "feature-proportion",
+      "inside": true
+    },
+    {
+      "id": "feature-svg",
+      "inside": true
+    },
+    {
+      "id": "cta-copy",
+      "inside": true
+    },
+    {
+      "id": "license-copy",
+      "inside": true
+    },
+    {
+      "id": "repository-url",
+      "inside": true
+    }
+  ],
+  "independentTextEdit": true,
+  "renderer": "Chromium",
+  "final_posts": {
+    "format": "PNG",
+    "dimensions": [
+      1080,
+      1350
+    ]
+  },
+  "comparison_board": {
+    "format": "PNG",
+    "dimensions": [
+      2280,
+      1600
+    ]
+  },
+  "svg_profile": "Hybrid; embedded raster and live SVG copy",
+  "overlay_equality": true,
+  "embedded_artwork_matches_source": true,
+  "unique_ids": true,
+  "vector_companions": {
+    "embedded_raster_elements": 0,
+    "live_text_objects_per_file": 9,
+    "png_dimensions": [
+      1080,
+      1350
+    ],
+    "strict_svg_profile": "passed without errors or warnings",
+    "interpretation": "Texture and lighting simplified; not a lossless conversion"
+  }
+}

@@ -18,6 +18,7 @@ of automatic skill selection or compliance across different AI products.
 | Actual raster poster | [plant-swap.png](../examples/plant-swap.png), exported from the SVG with Chromium | Pillow decoded a genuine RGB PNG at exactly 1080 x 1350; not renamed XML |
 | Transparent raster output | [balanced-mark.png](../examples/balanced-mark.png) | Genuine 256 x 256 RGBA PNG, nonempty artwork, alpha values spanning 0 to 255, and a transparent corner |
 | Visual review | Poster at 1080 x 1350 and a fitted 360 x 450 preview | Checked title prominence, content grouping, safe margins, copy visibility, whitespace, and unclipped plant geometry |
+| Built-in imagegen integration | [Promo comparison](../examples/promo-comparison/README.md) | Two actual artwork-generation calls, matching PNG/hybrid-SVG posts, identical live-text overlays, source artwork and prompts retained; separate fully vector interpretations also pass the strict SVG profile |
 
 The plant-swap composition uses a content-led arrangement: prominent copy at the
 upper-left and a supporting plant lower-right. A forced ratio split was not needed.
@@ -32,9 +33,9 @@ PNG is a flattened raster rendition.
 - PNG creation, decoding, dimensions, and transparency were exercised. JPEG and WebP
   are supported workflow choices when encoding tools are available, but those
   encoding paths were not exercised in this check.
-- Photographic image generation and provider-specific image tools were not exercised.
-  Their direction and review guidance is included in the skill; the host agent must
-  supply the appropriate tool.
+- Photo-specific realism checks were not exercised. The separate promo comparison
+  uses built-in imagegen for tactile sculptural artwork; other image providers were
+  not tested. The host agent must supply its available generation tool.
 - The tests verify structural behavior and concrete artifacts. They do not prove
   that every future composition is attractive or that an agent will always select
   and follow the skill automatically. The remaining [scenarios](scenarios.md) are

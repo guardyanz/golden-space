@@ -1,0 +1,7 @@
+Use case: ads-marketing
+Asset type: artwork layer for a portrait 4:5 social-media promotional post, ideally 1024 x 1280 pixels.
+Primary request: Create a polished promotional artwork for Golden Space, an open-source design skill for AI agents, for an audience of developers and designers.
+Subject: a sculptural arch and a sphere, with matte tactile surfaces and an editorial graphic-art feel.
+Color palette: warm ivory background, deep forest green, and a restrained terracotta accent.
+The final post will have the title Golden Space, the line Better space. Clearer design., a feature list, and a GitHub link, added separately. Leave room for that copy. Make a professional, attractive promotional composition.
+Constraints: artwork only; no letters, numbers, words, logos, watermarks, or comparison labels in the generated artwork. Do not render the promotional copy into the image.
