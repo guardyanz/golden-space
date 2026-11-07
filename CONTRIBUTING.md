@@ -1,5 +1,9 @@
 # Contributing
 
+Use English for all repository content, including documentation, sample prompts,
+code comments, image labels, SVG text, captions, and metadata. When changing text
+in an image, update its editable source and regenerate every affected raster export.
+
 Include a concrete design brief or SVG that demonstrates the proposed improvement.
 Explain the observable result: clearer grouping, preserved text editing, a corrected
 reference, or another specific outcome. Avoid adding a universal rule from a single

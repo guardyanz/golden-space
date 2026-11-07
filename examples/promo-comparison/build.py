@@ -66,16 +66,16 @@ def comparison():
   <desc id="art-desc">Two promotional posts from the same brief. The left uses baseline imagegen direction. The right adds Golden Space art direction. Both use an identical live-text layout. This is a one-sample illustration, not a benchmark.</desc>
   <rect id="background" width="2280" height="1600" fill="#e9e6df"/>
   <g id="comparison-labels" fill="#17372e" font-family="Arial, Helvetica, sans-serif">
-    <text id="baseline-label" x="40" y="65" font-size="31" font-weight="700">Tanpa Golden Space</text>
-    <text id="baseline-subtitle" x="40" y="103" font-size="20">Imagegen · brief dasar</text>
-    <text id="guided-label" x="1160" y="65" font-size="31" font-weight="700">Dengan Golden Space</text>
-    <text id="guided-subtitle" x="1160" y="103" font-size="20">Imagegen · tambahan arahan komposisi</text>
+    <text id="baseline-label" x="40" y="65" font-size="31" font-weight="700">Without Golden Space</text>
+    <text id="baseline-subtitle" x="40" y="103" font-size="20">Imagegen · standard brief</text>
+    <text id="guided-label" x="1160" y="65" font-size="31" font-weight="700">With Golden Space</text>
+    <text id="guided-subtitle" x="1160" y="103" font-size="20">Imagegen · additional composition guidance</text>
   </g>
   <g id="posts">
     <image id="baseline-post" x="40" y="140" width="1080" height="1350" href="{baseline}"/>
     <image id="guided-post" x="1160" y="140" width="1080" height="1350" href="{guided}"/>
   </g>
-  <text id="method-note" x="40" y="1549" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#17372e">Brief, palet, teks, dan layout teks sama. Satu sampel per versi; hasil generasi dapat bervariasi.</text>
+  <text id="method-note" x="40" y="1549" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#17372e">Same brief, palette, copy, and text layout. One sample per version; generated results may vary.</text>
 </svg>
 '''
 

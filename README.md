@@ -3,7 +3,7 @@
 **A design skill for AI agents: purposeful proportions, thoughtful whitespace,
 and clean SVG source you can keep editing.**
 
-[Bahasa Indonesia](README.id.md) · [Skill instructions](skills/golden-space/SKILL.md) · [MIT license](LICENSE)
+[Skill instructions](skills/golden-space/SKILL.md) · [MIT license](LICENSE)
 
 ![Golden Space: proportion with purpose](skills/golden-space/assets/starter.svg)
 

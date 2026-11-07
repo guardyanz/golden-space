@@ -3,7 +3,7 @@
 Two repository-promotion posts from the same brief, made with the built-in
 `image_gen` tool. The right-hand version adds Golden Space art direction.
 
-![Perbandingan promo Golden Space](comparison.png)
+![Golden Space promotional comparison](comparison.png)
 
 ## Downloads
 
@@ -107,17 +107,3 @@ editing in a dedicated vector editor were not tested.
 the requested dimensions, the embedded artwork matches the source, IDs are unique,
 the text/vector overlay trees are identical, all nine live-text objects stay within
 the canvas, and a text object can be changed independently in the browser DOM.
-
-## Bahasa Indonesia
-
-Kedua versi memakai imagegen, brief yang sama, dan layout teks yang identik.
-Versi kanan menambahkan arahan Golden Space untuk ruang teks, margin, proporsi,
-hierarki subjek, dan jarak antar bentuk. Versi kiri tetap dibuat dengan brief
-profesional, tanpa sengaja diperburuk.
-
-File SVG di sini adalah **hybrid**: teks dan elemen layout bisa diedit, sedangkan
-artwork hasil imagegen tetap raster. PNG merupakan hasil render dari SVG tersebut.
-Tersedia pula pendamping `-vector.svg` dan `-vector.png` yang seluruh geometrinya
-editable dan tidak memuat raster, dengan penyederhanaan tekstur hasil imagegen.
-Contoh ini memperlihatkan satu hasil per versi, bukan jaminan semua keluaran AI
-akan lebih bagus atau bukti bahwa satu komposisi pasti disukai semua orang.
